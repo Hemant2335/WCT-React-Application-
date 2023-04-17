@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-const Card = (props) => {
+const Cardtemp = (props) => {
     return <div>
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
@@ -8,12 +8,9 @@ const Card = (props) => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{props.title}</h2>
-    <p>Try out this Amazing webapp</p>
-    <div className="card-actions">
-      <button className= {`btn btn-primary ${props.dis}`} ><Link to={props.link}>Click Here</Link></button>
-    </div>
+    <p>Today's Max Temp: {`${props.max_temp}\u00B0C`} <br/> Min Temp : {`${props.min_temp}\u00B0C`} <br/> <br/><p className='text-4xl'>{`${props.temp}\u00B0C`}</p></p>
   </div>
 </div>
     </div>;
 }
-export default Card;
+export default Cardtemp;
