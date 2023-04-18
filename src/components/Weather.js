@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Card from './Card';
 import Cardtemp from './Cardtemp';
 import Cardhum from './Cardhum';
 import Cardwind from './Cardwind';
